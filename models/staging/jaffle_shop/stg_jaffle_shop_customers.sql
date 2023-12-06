@@ -1,6 +1,6 @@
 with source_customers as (
 
-    select * from {{ source('dbt_learning', 'customers') }}
+    select * from {{ source('dbt_learning', 'jaffle_shop_customers') }}
 
 ),
 
