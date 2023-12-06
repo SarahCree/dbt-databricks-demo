@@ -1,6 +1,6 @@
 with source_orders as (
 
-    select * from {{ source('dbt_learning', 'orders') }}
+    select * from {{ source('dbt_learning', 'jaffle_shop_orders') }}
 
 ),
 
