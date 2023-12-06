@@ -5,14 +5,14 @@ sources:
     description: A replica of the postgres database
 
     tables:
-      - name: customers
+      - name: jaffle_shop_customers
         columns:
           - name: id
             tests:
               - unique
               - not_null
 
-      - name: orders
+      - name: jaffle_shop_orders
         description: One record per order
         loaded_at_field: _etl_loaded_at
 
