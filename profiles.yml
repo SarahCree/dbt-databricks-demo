@@ -1,0 +1,15 @@
+# ~/.dbt/profiles.yml
+
+my-databricks:
+  outputs:
+    dev:
+      type: databricks
+      catalog: hive_metastore
+      schema: dbt_learning
+      host: https://lovelytics-internal.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/13bb8028e32d1d66
+      token: dapi644cb4a3725a61486666f5660716ff11
+      connect_timeout: 30
+      connect_retries: 15
+      threads: 5
+  target: dev
