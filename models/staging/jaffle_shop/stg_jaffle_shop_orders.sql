@@ -1,3 +1,9 @@
+{{ config(
+    materialized='table',
+    file_format='delta',
+    tags=["test"]
+) }}
+    
 with source_orders as (
 
     select * from {{ source('dbt_learning', 'jaffle_shop_orders') }}
